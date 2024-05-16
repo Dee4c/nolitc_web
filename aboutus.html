@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Organizational Chart</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    :root {
+      --level-1: #8dccad;
+      --level-2: #f5cc7f;
+      --level-3: #7b9fe0;
+      --level-4: #f27c8d;
+      --black: black;
+    }
+
+    .rectangle {
+      position: relative;
+      padding: 10px; /* Reduced padding */
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+      font-size: 12px;
+      width: 300px;
+      margin:auto;
+      border-radius: 30px;
+      margin-top: 10px;
+      background-color:bisque;
+    }
+
+    .level-1 {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px; /* Adjusted margin */
+    }
+
+    .level-1 .rectangle{
+      font-size: 10px;
+      text-align: center;
+      border-radius: 30px;
+      gap: 10%;
+    }
+
+    .level-2 {
+      width: fit-content; /* Adjusts width to fit content */
+      margin: 0 10px; /* Adjusted margin */
+      background: var(--level-2);
+    }
+
+    .level-3 {
+      width: fit-content; /* Adjusts width to fit content */
+      margin-bottom: 10px; /* Reduced margin */
+      background: var(--level-3);
+    }
+
+    .level-4 {
+      width: fit-content; /* Adjusts width to fit content */
+      margin-bottom: 10px; /* Reduced margin */
+      background: var(--level-4);
+    }
+
+    .director-wrapper {
+      display: flex;
+      flex-direction: column; /* Display persons vertically */
+      align-items: center; /* Center align persons */
+      margin: 0 10px; /* Adjusted margin */
+    }
+
+    ol {
+      list-style-type: none; /* Hide the numbers */
+      padding: 0; /* Remove default padding */
+      margin: 0; /* Remove default margin */
+    }
+
+    .box-container{
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .box-mission {
+      background: linear-gradient(to bottom right, #007bff, #00ff00); /* Adjust colors as needed */
+      height:(fit-content);
+      padding: 20px 10px;
+    }
+
+    .box-mission h3{
+      font-size: 15px;
+      font-family: 'Poppins', sans-serif;
+      text-align: justify;
+      color:white;
+    }
+
+    .box-mission-1 h3{
+      font-size: 15px;
+      font-family: 'Poppins', sans-serif;
+      text-align: justify;
+      color:white;
+      padding: 20px 10px;
+      background: linear-gradient(to bottom right, #007bff, #00ff00);
+      height:500px;
+    }
+
+   .con {
+    margin-left: 380px;
+    align-items: center;
+    margin-top: 20px;
+   }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+        <a href="https://www.facebook.com/nolitcinspire/">
+            <img src="image/nolitc logo.png" alt="NOLITC Logo" class="logo-nolitc">
+        </a>
+        <h1>NOLITC Web Page</h1>
+        <a href="https://www.facebook.com/NegOcc.Gov/">
+            <img src="image/negros logo.png" alt="NOLITC Logo" class="logo-negros">
+        </a>
+    </header>
+    <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+  </nav>
+  <div class="box-container">
+  <h1 class="level-1 rectangle">MA. CRISTINA B. OBRECIDO, PhD.<br>Vocational School Administrator</h1>
+  <div class="level-1">
+    <div class="director-wrapper">
+      <h3 class="level-2 rectangle">ADMINISTRATIVE SUPPORT<br>AND<br>IEC SECTION</h3>
+      <ol>
+        <li><h3 class="level-3 rectangle">CELY C. TRIO<br>Registrar</h3></li>
+        <li><h3 class="level-3 rectangle">JESSE MAE R. HERIA<br>ADMINISTRATIVE OFFICE</h3></li>
+        <li><h3 class="level-3 rectangle">RED DAWN JOY D. LAURENTE<br>PROJECT DEVELOPMENT OFFICER</h3></li>
+        <li><h3 class="level-3 rectangle">EUGUNE P. GEOGANGCO<br>ADMINISTRATIVE AIDE</h3></li>
+        <li><h3 class="level-3 rectangle">MARK V. FERNANDEZ<br>DRIVER</h3></li>
+        <li><h3 class="level-3 rectangle">ROMMEL T. TINGSON<br>ADMINISTRATIVE AIDE</h3></li>
+      </ol>
+    </div>
+    <div class="director-wrapper">
+      <h3 class="level-2 rectangle">TRAINING<br>AND<br>DEVELOPMENT SECTION</h3>
+      <ol>
+        <li><h3 class="level-3 rectangle">JAN PARSON R. HERNIA<br>Training Coordinator</h3></li>
+        <li><h3 class="level-3 rectangle">IAN CHRISTIAN C. ANTONIO<br>Visual Graphic Design Instructor</h3></li>
+        <li><h3 class="level-3 rectangle">DONATO D. ARADO<br>2D Animation Instructor</h3></li>
+        <li><h3 class="level-3 rectangle">MIRAMAR M. FLORES<br>English Language Proficiency/<br>IELTS Review Instructor</h3></li>
+        <li><h3 class="level-3 rectangle">LARRY B. FRANCO<br>Contact Center Service Instructor</h3></li>
+        <li><h3 class="level-3 rectangle">MEI-MEI P. LONASCO<br>English Language Proficiency/<br>IELTS Review Instructor</h3></li>
+        <li><h3 class="level-3 rectangle">REGINA ROSE S. PAROLANAN<br>English Language Proficiency Instructor</h3></li>
+        <li><h3 class="level-3 rectangle">CHORELIE V. TUPAS<br>Contact Center Service Instructor</h3></li>
+        <li><h3 class="level-3 rectangle">MARK LOUIE A. YSON<br>English Language Proficiency Instructor</h3></li>
+      </ol>
+    </div>
+    <div class="director-wrapper">
+      <h3 class="level-2 rectangle">RECRUITMENT<br>AND<br>PLACEMENT SECTION</h3>
+      <ol>
+        <li><h3 class="level-3 rectangle">AVELYN A. MARAÑON<br>PROJECT DEVELOPMENT OFFICER/<br>RECRUITMENT OFFICER</h3></li>
+        <li><h3 class="level-3 rectangle">PRECIOUS JOY A. MONGCAL<br>ADMINISTRATIVE AIDE</h3></li>
+        <li><h3 class="level-3 rectangle">OMEGA B. ARMIGOS<br>ADMINISTRATIVE ASSISTANT</h3></li>
+        <li><h3 class="level-3 rectangle">JOHN PHILIP C. BAUTISTA<br>ADMINISTRATIVE ASSISTANT</h3></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="box-container">
+
+      <div class="box-mission">
+        <h3>MISSION
+          <br> A leading institution that nurtures and empowers globally competitive workforce; helps build a <b>GENDER-FAIR Society</b> and enables inclusive and sustainable growth by 2030.</h3>
+      </div>
+
+      <div class="box-mission">
+          <h3>Core Values<br>NOLITC INSPIRE<br>Ingeuity - Learning experience inspire creativity and innovation.
+            <br>Nationalism - Learning experience inculates love of country and fellowmen as a strong motivation to contribute to development.
+            <br>Social Empowerment - Learning experience contributes to social awareness of stakeholders.
+            <br>Professionalism - Learning experience inculates proper work ethics and attitudes.
+            <br>Independence - Learning experience motivates self-reliance, critical thinking and emotional stability.
+            <br>Respect and Responsibility Learning experience instills utmost respect for institution, gender and cultural diversity.
+            <br>Excellence - Learning experience instills the principle that any endeavor is an opportunity to excel and achieve goals in life.
+        </h3>
+      </div>
+
+      <div class="box-mission-1">
+          <h3>
+            NOLITC QUALITY STATEMENT<br>
+            NOLITC commits to deliver quality service to its clientele through:<br>
+            CARES<br>
+            COMMITED<br>
+            ACCOUNTABLE<br>
+            RELIABLE<br>
+            EFFICIENT AND EFFECTIVE<br>
+            SERVICES
+          </h3>
+      </div>
+</div>
+
+<div class="con">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d832.2484247576535!2d122.94522546496596!3d10.662248632474792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aed1ca9f73f257%3A0x15a9cc91c779371c!2sNEGROS%20OCCIDENTAL%20LANGUAGE%20%26%20INFORMATION%20TECHNOLOGY%20CENTER!5e0!3m2!1sen!2sph!4v1711090582023!5m2!1sen!2sph" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+</body>
+</html>

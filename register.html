@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>NOLITC Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+        <main>
+        <header>
+            <a href="https://www.facebook.com/nolitcinspire/">
+                <img src="image/nolitc logo.png" alt="NOLITC Logo" class="logo-nolitc">
+            </a>
+            <h1>NOLITC Web Page</h1>
+            <a href="https://www.facebook.com/NegOcc.Gov/">
+                <img src="image/negros logo.png" alt="NOLITC Logo" class="logo-negros">
+            </a>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    <h1 class="head">Registration Form</h1>
+    <p class="instruction">Please fill out this form with the required information</p>
+    <form method="post" action=''>
+      <fieldset>
+        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" placeholder="First Name" required /></label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" placeholder="Last Name" required /></label>
+        <label for="last-name">Enter Your Suffix: <input id="last-name" name="last-name" type="text" placeholder="Can leave empty if none."/></label>
+        <label for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="Email Address" required /></label>
+        <label for="mobile-number">Enter your Mobile Number<input id="mobile-number" name="mobile-number" type="tel" pattern="[0-9]+" maxlength="11" placeholder="Mobile Number" required /></label>
+        <label for="birth-date">Birth Date<input id="birth-date" name="birth-date" type="date" required /></label>
+        <div class="form-control">
+          <label>Civil Status
+              <small>(Check that apply)</small>
+          </label>
+          <div class="checkboxes">
+
+          <div class="checkbox">
+          <label for="inp-1">
+              <input type="checkbox" name="inp">Single
+                </input>
+           </label>
+          </div>
+
+          <div class="checkbox">
+            <label for="inp-1">
+                <input type="checkbox" name="inp">Married
+                  </input>
+             </label>
+            </div>
+
+            <div class="checkbox">
+              <label for="inp-1">
+                  <input type="checkbox" name="inp">Widow/er
+                    </input>
+               </label>
+              </div>
+
+
+              <div class="checkbox">
+                <label for="inp-1">
+                    <input type="checkbox" name="inp">Separated
+                      </input>
+                 </label>
+            </div>  
+
+            <div class="checkbox">
+              <label for="inp-1">
+                  <input type="checkbox" name="inp">Solo Parent
+                    </input>
+               </label>
+          </div>  
+        </div>
+        <label for="street">Number, Street<input type="street" 
+                 class="form-control" 
+                 id="autocomplete" 
+                 placeholder="Street"></label>
+          
+          <label for="city">What City?
+                  <select id="referrer" name="referrer">
+                    <option value="">(select one)</option>
+                    <option value="1">La Carlota City</option>
+                    <option value="2">La Castellana</option>
+                    <option value="3">Bago City</option>
+                    <option value="4">Sipalay City</option>
+                    <option value="5">Canlaon City</option>
+                    <option value="5">Dumaguete City</option>
+                  </select>
+          </label>
+
+          <label for="zip">Zip Code<input type="zip" 
+                 class="form-control" 
+                 id="inputZip" 
+                 placeholder="Zip"></label>
+          
+          <label for="province">Province<input type="province" 
+                 class="form-control" 
+                 id="inputProvince" 
+                 placeholder="Province"></label>
+      </fieldset>
+      <fieldset>
+        <h5>Educational Attainment</h5>
+        <label for="educational">Educational Attainment
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">No Grade Completed</option>
+            <option value="2">Pre School(Nursery,Kinder,Prep)</option>
+            <option value="3">High School Undergraduate</option>
+            <option value="4">High School Graduate</option>
+            <option value="5">Elementary Undergraduate</option>
+            <option value="6">Post Secondary Undergraduate</option>
+            <option value="7">College Undergraduate</option>
+            <option value="8">College Graduate or Higher</option>
+            <option value="9">Elementary Graduate</option>
+            <option value="10">Post Secondary Graduate</option>
+            <option value="11">Junior High Graduate</option>
+            <option value="12">Senior High Graduate</option>
+          </select>
+        </label>
+    </fieldset>
+
+      <fieldset>
+        <label for="profile-picture">Upload a Passport size photo: <input id="profile-picture" type="file" name="file" /></label>
+        <label for="nso">Upload a scan of your NSO Birth Certificate: <input id="nso" type="file" name="file" /></label>
+        <label for="referrer">What Course do you want to Enroll?
+            <select id="referrer" name="referrer">
+              <option value="">(select one)</option>
+              <option value="1">Contact Service Center</option>
+              <option value="2">Visual Graphics</option>
+              <option value="3">Animation</option>
+              <option value="4">2D Animation</option>
+            </select>
+          </label>
+      </fieldset>
+      <div class="boxbox">
+        <a class="buttonbutton" href="#onclick">Submit</a>
+    </div>
+    <div id="onclick" class="overlay">
+        <div class="popup">
+            <h2>Form Submitted</h2>
+            <a class="close" href="index.html">&times;</a>
+            <div class="content">
+               Registration form submitted succesfully please wait for the reply, check the email your provided or mobile number.
+            </div>
+        </div>
+    </div>
+    </form>
+    </main>
+  </body>
+</html>
